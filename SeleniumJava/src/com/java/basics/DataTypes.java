@@ -21,6 +21,9 @@ public class DataTypes {
 		System.out.println("double value is : " + d);
 		System.out.println("boolean value is : " + bFlag);
 		System.out.println("char value is : " + c);
+		
+		String str = "hello";
+		System.out.println(str);
 			
 	}
 
