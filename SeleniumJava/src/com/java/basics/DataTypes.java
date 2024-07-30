@@ -3,16 +3,16 @@ package com.java.basics;
 public class DataTypes {
 
 	public static void main(String[] args) {
-	    // In Java we have 8 primitive data types		
+		// In Java we have 8 primitive data types		
 		byte b=123; // -128 to +127 --> 1 byte - 8 bits 
-	    short s=31900;
+		short s=31900;
 		int a=10;
 		long l=73462;
 		float f=13.6f;
 		double d=536.464564;
 		boolean bFlag=true;
 		char c='t';
-		
+
 		System.out.println("byte value is : " + b);
 		System.out.println("short value is : " + s);
 		System.out.println("integer value is " + a);
@@ -21,10 +21,20 @@ public class DataTypes {
 		System.out.println("double value is : " + d);
 		System.out.println("boolean value is : " + bFlag);
 		System.out.println("char value is : " + c);
-		
+
 		String str = "hello";
 		System.out.println(str);
-			
+
+		// Widening --> storing smaller datatype in a bigger container
+		byte b1=119;
+		int a1=b1; // Implicit type casting or widening
+		System.out.println(b1 + " " +a1);
+
+		// Narrowing --> storing bigger datatype in a smaller container
+		short s2=130;
+		byte b2=(byte)s2; // Explicit type casting or narrowing
+		System.out.println(s2 + " " +b2);
+
 	}
 
 }
