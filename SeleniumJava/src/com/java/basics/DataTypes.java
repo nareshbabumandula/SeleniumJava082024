@@ -25,12 +25,12 @@ public class DataTypes {
 		String str = "hello";
 		System.out.println(str);
 
-		// Widening --> storing smaller datatype in a bigger container
+		// Widening --> storing smaller datatype into a bigger container
 		byte b1=119;
 		int a1=b1; // Implicit type casting or widening
 		System.out.println(b1 + " " +a1);
 
-		// Narrowing --> storing bigger datatype in a smaller container
+		// Narrowing --> storing bigger datatype into a smaller container
 		short s2=130;
 		byte b2=(byte)s2; // Explicit type casting or narrowing
 		System.out.println(s2 + " " +b2);
