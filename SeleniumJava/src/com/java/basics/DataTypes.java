@@ -34,7 +34,13 @@ public class DataTypes {
 		short s2=130;
 		byte b2=(byte)s2; // Explicit type casting or narrowing
 		System.out.println(s2 + " " +b2);
-
+		
+		String sText="welcome to java software edition";
+		String[] arrWords = sText.split(" ");
+		System.out.println(arrWords[0]);
+		System.out.println(arrWords[1]);
+		System.out.println(arrWords[2]);
+	
 	}
 
 }
