@@ -24,6 +24,8 @@ public class DataTypes {
 
 		String str = "hello";
 		System.out.println(str);
+		String str1 ="Welcome to java";
+		System.out.println(str1);
 
 		// Widening --> storing smaller datatype into a bigger container
 		byte b1=119;
