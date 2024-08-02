@@ -14,7 +14,6 @@ public class C extends B{
 		c.addition();
 		c.subtraction();
 		c.multiplication();
-
 	}
 
 }
