@@ -43,7 +43,7 @@ public class DataTypes {
 		System.out.println(arrWords[0]);
 		System.out.println(arrWords[1]);
 		System.out.println(arrWords[2]);
-	
+		System.out.println(arrWords[3]);
 	}
 
 }
