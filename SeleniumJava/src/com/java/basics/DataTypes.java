@@ -45,6 +45,17 @@ public class DataTypes {
 		System.out.println(arrWords[2]);
 		System.out.println(arrWords[3]);
 		System.out.println(arrWords[4]);
+		
+		//Adding code of sajjad from line 49 in DataTypes
+		String SajText = "Text-Split-based-on-delimiter-hifen";
+		String[] SajArrWords = SajText.split("-");
+		System.out.println(SajArrWords.length);
+		for (int i=0; i<SajArrWords.length; i++) {
+			
+			System.out.println(SajArrWords[i]);
+			
+		}
+				
 	}
 
 }
