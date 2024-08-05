@@ -12,7 +12,7 @@ public class DataTypes {
 		double d=536.464564;
 		boolean bFlag=true;
 		char c='t';
-
+		System.out.println("Hello");
 		System.out.println("byte value is : " + b);
 		System.out.println("short value is : " + s);
 		System.out.println("integer value is " + a);
