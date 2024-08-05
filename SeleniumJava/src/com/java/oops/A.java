@@ -12,7 +12,7 @@ public class A {
 	
 	void division() {
 		int c=b/a;
-		System.out.println("Division of a and b is : "+c);
+		System.out.println("Division result of a and b is : "+c);
 	}
 
 
