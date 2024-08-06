@@ -45,6 +45,37 @@ public class DataTypes {
 		System.out.println(arrWords[2]);
 		System.out.println(arrWords[3]);
 		System.out.println(arrWords[4]);
-	}
+		
+		//Java Program Using if else Statement
+		int marks=80;
+		if (marks<35)
+		{
+			System.out.println("Fail");
+		}
+		else if (marks>=35&&marks<60)
+		{
+			System.out.println("Pass and got D Grade");
+		}
+		else if(marks>=60&&marks<70) 
+		{
+			System.out.println("Pass and got C Grade");
+		}
+		else if(marks>=70&&marks<80)
+		{
+			System.out.println("Pass and got B Grade");
+		}
+		else if(marks>=80&&marks<90)
+		{
+			System.out.println("Pass and got A Grade");
+		}
+		else if(marks>=90&&marks<=100)
+		{
+			System.out.println("Pass and got A+ Grade");
+		}
+		else
+		{
+		System.out.println("Invalid!");
+		}
+}
 
 }
