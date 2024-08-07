@@ -14,6 +14,15 @@ public class Arithmetic {
 		int c=a-b;
 		System.out.println("Subtraction of and b is : " + c);
 	}
+	
+	int m1() {
+		System.out.println("Executing m1 method..!");
+		return 10;
+	}
+	
+	void m2(int x) {
+		System.out.println("Return type value of m1 method passed to m2 method is : " + x);
+	}
 
 	// No argument constructor
 	public Arithmetic() {
@@ -30,12 +39,15 @@ public class Arithmetic {
 	public static void main(String[] args) {
 		// Here Arithmetic() is a constructor which is created by Java compiler as a default constructor
 		Arithmetic arth  = new Arithmetic();
+		System.out.println(arth.hashCode());
 		arth.addition();
 		arth.subtraction();
 		Arithmetic art  = new Arithmetic(100, 200);
+		System.out.println(art.hashCode());
 		art.addition();
 		art.subtraction();
-
+		int output = art.m1();
+		art.m2(output);
 	}
 
 }
