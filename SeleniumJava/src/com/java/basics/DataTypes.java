@@ -45,6 +45,9 @@ public class DataTypes {
 		System.out.println(arrWords[2]);
 		System.out.println(arrWords[3]);
 		System.out.println(arrWords[4]);
+		
+		//Noor is adding one line
+		System.out.println("Hi I have onboarded");
 	}
 
 }
