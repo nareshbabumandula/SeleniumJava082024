@@ -5,15 +5,15 @@ public class WrapperClassesTest {
 	/**
 	 * Wrapper classes: Wrapper classes are used to convert primitive data types into objects.
 	 * Each primitive data type has a corresponding wrapper class as shown below.
-	 * 
-	 * byte --> Byte
-	 * short --> Short
-	 * int --> Integer
-	 * long --> Long
-	 * float --> Float
-	 * double --> Double
-	 * char --> Character
-	 * boolean --> Boolean
+	 * Primitive		Object Type
+	 * byte 	-->  	Byte
+	 * short 	--> 	Short
+	 * int 		--> 	Integer
+	 * long 	--> 	Long
+	 * float 	--> 	Float
+	 * double 	--> 	Double
+	 * char 	--> 	Character
+	 * boolean 	--> 	Boolean
 	 * @param args
 	 */
 	public static void main(String[] args) {
