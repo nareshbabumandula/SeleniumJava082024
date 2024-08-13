@@ -9,7 +9,7 @@ public class Samsung implements Mobile{
 	public static void main(String[] args) {
 		Samsung samsung=new Samsung();
 		samsung.storage();
-		System.out.println(samsung.Mtype);
+		System.out.println(Mobile.Mtype);
 		Mobile.processor();
 		samsung.frontCam();
 	}
