@@ -16,7 +16,8 @@ public class Bike extends Vehicle
 		Bike bike=new Bike();
 		bike.startEngine();
 		bike.stopEngine();
-		System.out.println(Vehicle.makeB);
-		System.out.println((Vehicle.modelB));
+		//System.out.println(Vehicle.makeB);
+		//System.out.println((Vehicle.modelB));
+		bike.feature("RoyalEnfield", "ThunderBird");
 	}
 }

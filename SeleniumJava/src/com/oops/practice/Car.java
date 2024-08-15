@@ -17,8 +17,9 @@ public static void main(String[] args) {
 	Car car=new Car();
 	car.startEngine();
 	car.stopEngine();
-	System.out.println(Vehicle.makeC);
-	System.out.println(Vehicle.modelC);
+	//System.out.println(Vehicle.makeC);
+	//System.out.println(Vehicle.modelC);
+	car.feature("Hyndai", "i10");
 
 }
 }
