@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class CheckedExceptionTest {
+public class CheckedAndUncheckedExceptionsTest {
 
 	/**Exception: In Java an exception is an event which disrupts the normal flow of the program execution.
 	 * It is an object which is thrown at runtime.
@@ -84,7 +84,12 @@ public class CheckedExceptionTest {
 	void m1() {
 		System.out.println("Executing m1 method..!");
 	}
-	
+	/**
+	 * Checked exceptions occur during the code compilation time itself. It means before the code gets executed the java compiler will show an error
+	 * at the line of code where the exception needs to be handled. 
+	 * @throws FileNotFoundException 
+	 * 
+	 */
 	void checkedExceptionExample() {
 		try {
 			FileReader fr = new FileReader("./Data.txt");
@@ -99,7 +104,7 @@ public class CheckedExceptionTest {
 	}
 		
 	public static void main(String[] args) {
-		CheckedExceptionTest cet = new CheckedExceptionTest();
+		CheckedAndUncheckedExceptionsTest cet = new CheckedAndUncheckedExceptionsTest();
 		//cet.noExceptionHandlingExample();
 		//cet.exceptionHandlingUsingThrows();
 		cet.checkedExceptionExample();
