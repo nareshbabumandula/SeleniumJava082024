@@ -10,10 +10,10 @@ package com.java.oops;
  * cannot be instantiated directly. The reason for this is that these constructs are designed to define
  * a common structure or contract without providing a complete implementation.
  *  
- * @author nares
+ * @author naresh
  *
  */
-public interface SIM {
+public interface SIM extends Mobile,Network {
 	
 	String size = "0.75mm";
 	String model="";
