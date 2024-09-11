@@ -3,7 +3,7 @@ package com.control.statements;
 public class WhileTest {
 	
 	void whileExample() {
-		int a=1;
+		int a=10;
 		
 		while (a<10) {
 			System.out.println(a);

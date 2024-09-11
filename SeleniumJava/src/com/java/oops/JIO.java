@@ -12,4 +12,11 @@ public class JIO implements SIM{
 	  System.out.println("SIM number is printed on every JIO sim");
 	}
 
+	@Override
+	public void name() {
+		System.out.println("SIM name is JIO");
+	}
+
+	
+
 }
