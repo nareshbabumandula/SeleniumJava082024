@@ -22,7 +22,7 @@ public abstract class RBI {
 		System.out.println("Creditcard facility may or may not be there.!");
 	}
 	
-
+	
 	public static void main(String[] args) {
 		// RBI rbi = new RBI(); // Cannot instantiate the type RBI
 	}
