@@ -14,6 +14,10 @@ public class MethodOverloadTest {
 	int a=10;
 	int b=20;
 	
+	void m2() {
+		System.out.println("Executing m2 method in MethodOverloadTest class");
+	}
+	
 	void addition() {
 		int c=a+b;
 		System.out.println("Addition of a and b is : " +c);

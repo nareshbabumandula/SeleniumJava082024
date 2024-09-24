@@ -28,10 +28,16 @@ public class MethodOverrideTest extends MethodOverloadTest{
 		System.out.println(this.b);
 	}
 	
+	@Override
+	void m2() {
+		System.out.println("Executing m2 method in MethodOverrideTest class");
+	}
+	
 	public static void main(String[] args) {
 		MethodOverrideTest mot = new MethodOverrideTest();
 		mot.addition();
 		mot.m1();
+		mot.m2();
 	}
 
 }
