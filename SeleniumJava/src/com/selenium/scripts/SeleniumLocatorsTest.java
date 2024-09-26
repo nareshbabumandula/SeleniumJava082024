@@ -40,7 +40,7 @@ public class SeleniumLocatorsTest {
 		driver.findElement(By.xpath("//input[@id='user']")).sendKeys("Noor");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='user']")).clear();
-		
+
 		// tagName locator
 		driver.findElement(By.tagName("input")).sendKeys("Naresh");
 		Thread.sleep(2000);
