@@ -77,6 +77,17 @@ public class SeleniumAdvancedLocators {
 		driver.findElement(By.cssSelector("input[id*='se']")).sendKeys("Sean");
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("input[id*='se']")).clear();
+		
+		// CSS with # symbol as a replacement for id
+		driver.findElement(By.cssSelector("input#user")).sendKeys("Arun");
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("input#user")).clear();
+
+		// CSS with .(dot) symbol as a replacement for class
+		driver.findElement(By.cssSelector("input.txt_log")).sendKeys("Krish");
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("input.txt_log")).clear();
+
 
 		Thread.sleep(2000);
 		driver.quit();
