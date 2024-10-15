@@ -23,14 +23,14 @@ public class XPathAxesTest {
 		//2. ancestor-or-self : This one indicates the context node and all the ancestors relativeto the context node, and includes the root node
 		driver.findElement(By.xpath("//input[@name='email_to[]' and @value='0']/ancestor-or-self::*"));
 
-		//3 attribute: This indicates the attributes of the context node. It can be represented with the “@” symbol.
+		//3 attribute: This indicates the attributes of the context node. It can be represented with the ï¿½@ï¿½ symbol.
 		driver.findElement(By.xpath("//input[@name='email_to[]' and @value='0']")).click();
 		driver.findElement(By.xpath("//input[@name='email_to[]' and @value='0']")).click();
 
 		//4. child: This indicates the children of the context node
 		driver.findElement(By.xpath("//label[@for='subject']/child::span"));
 
-		//5. descendent: This indicates the children, grand children, and their children (if any) of the context node. This does NOT indicate the Attribute and Namespace.
+		//5. descendant: This indicates the children, grand children, and their children (if any) of the context node. This does NOT indicate the Attribute and Namespace.
 		List<WebElement> elements = driver.findElements(By.xpath("//table[@summary='This table contains contact form fields.']/descendant::input[@name='email_to[]']"));
 		System.out.println("No of elements found are : " + elements.size());
 		
@@ -38,7 +38,7 @@ public class XPathAxesTest {
 			field.click();
 		}
 
-		//6. descendent-or-self: This indicates the context node and the children, and grand children and their children (if any) of the context node. This does NOT indicate the attribute and namespace.
+		//6. descendant-or-self: This indicates the context node and the children, and grand children and their children (if any) of the context node. This does NOT indicate the attribute and namespace.
 		List<WebElement> nelements = driver.findElements(By.xpath("//table[@summary='This table contains contact form fields.']/descendant-or-self::input[@name='email_to[]']"));
 		System.out.println("No of elements found are : " + nelements.size());
 		
@@ -48,7 +48,7 @@ public class XPathAxesTest {
 		//8. following-sibling: This one indicates all the sibling nodes (same parent as the context node) that appear after the context node in the HTML DOM structure. This does NOT indicate descendant, attribute, and namespace.
 		driver.findElement(By.xpath("//input[@id='q4' and @value='First Option']/following-sibling::input"));
 		
-		//9. preceding-sibling: This one indicates all the sibling nodes (same parent as contextnode) that appear before the context node in the HTML DOM structure. This doesNOT indicate descendent, attribute, and namespace.
+		//9. preceding-sibling: This one indicates all the sibling nodes (same parent as context node) that appear before the context node in the HTML DOM structure. This doesNOT indicate descendent, attribute, and namespace.
 		driver.findElement(By.xpath("//input[@id='q4' and @value='Fifth Option']/preceding-sibling::input"));
 		
 		//10. parent: This indicates the parent of the context node.
