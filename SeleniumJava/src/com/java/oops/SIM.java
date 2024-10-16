@@ -1,7 +1,8 @@
 package com.java.oops;
 
 /**
- * interface: To achieve 100% abstraction we go for interface
+ * interface: Interface is a contract or a template/blueprint through which 100% abstraction is achieved
+ * To achieve 100% abstraction we go for interface
  * 1. Interface will not allow non-abstract concrete methods(method with body)
  * 2. By default all the methods and variables are abstract and final in an interface
  * 3. 4. We can't instantiate an interface because it only defines method signatures, not the implementation
