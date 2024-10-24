@@ -40,7 +40,6 @@ public class ActionsTest {
 
 	@Test(retryAnalyzer = CustomListener.class)
 	public void actionMethods() throws InterruptedException {
-		Assert.assertEquals(true, true);
 		// Working with mouse over actions
 		WebElement addons = driver.findElement(By.xpath("//div[contains(text(),'Add-ons')]"));
 		Actions action = new Actions(driver);
