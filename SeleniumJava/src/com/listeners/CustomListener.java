@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class CustomListener implements IRetryAnalyzer, ITestListener {
-	
+
 	private int retryCount=0;
 	private static final int maxRetryCount=3;
 
@@ -16,6 +16,11 @@ public class CustomListener implements IRetryAnalyzer, ITestListener {
 			return true;
 		}
 		return false;
+	}
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		System.out.println("Starting Test: " + result.getName());
 	}
 
 }
