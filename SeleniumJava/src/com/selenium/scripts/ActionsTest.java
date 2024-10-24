@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.listeners.CustomListener;
 
@@ -22,12 +23,13 @@ public class ActionsTest {
 
 	static WebDriver driver;
 
+	@Parameters({"url"})
 	@BeforeClass
-	public void accessSite() {
+	public void accessSite(String url) {
 		ChromeOptions ops = new ChromeOptions();
 		ops.addArguments("--disable-notifications");
 		driver = new ChromeDriver(ops);
-		driver.get("https://www.spicejet.com/");
+		driver.get(url);
 		driver.manage().window().maximize();
 	}
 
