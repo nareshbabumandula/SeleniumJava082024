@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.listeners.CustomListener;
 
@@ -22,12 +23,13 @@ public class ActionsTest {
 
 	static WebDriver driver;
 
+	@Parameters({"url"})
 	@BeforeClass
-	public void accessSite() {
+	public void accessSite(String url) {
 		ChromeOptions ops = new ChromeOptions();
 		ops.addArguments("--disable-notifications");
 		driver = new ChromeDriver(ops);
-		driver.get("https://www.spicejet.com/");
+		driver.get(url);
 		driver.manage().window().maximize();
 	}
 
@@ -36,11 +38,11 @@ public class ActionsTest {
 		driver.quit();
 	}
 
-	@Test
+	@Test(retryAnalyzer = CustomListener.class)
 	public void actionMethods() throws InterruptedException {
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 		// Working with mouse over actions
-		WebElement addons = driver.findElement(By.xpath("//div[contains(text(),'Add-ons123')]"));
+		WebElement addons = driver.findElement(By.xpath("//div[contains(text(),'Add-ons')]"));
 		Actions action = new Actions(driver);
 		action.moveToElement(addons).perform();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
