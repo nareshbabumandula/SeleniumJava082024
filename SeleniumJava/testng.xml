@@ -7,7 +7,7 @@
  </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.selenium.scripts.ActionsTest"/>
+      <class name="com.selenium.scripts.ActionsTestWithListeners"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
