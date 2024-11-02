@@ -62,5 +62,4 @@ public class AmazonTest {
 	void viewReceipt() {
 		System.out.println("Verified the payment receipt");
 	}
-	
-}
+	}
