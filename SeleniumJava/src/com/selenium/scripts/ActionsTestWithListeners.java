@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 import com.listeners.CustomListener;
 
 @Listeners(CustomListener.class)
-public class ActionsTest {
+public class ActionsTestWithListeners {
 
 	static WebDriver driver;
 
