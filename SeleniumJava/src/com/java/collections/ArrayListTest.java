@@ -26,7 +26,7 @@ public class ArrayListTest {
         List <String> list2 = new LinkedList();
         List <String> list3 = new Vector();
         List <String> list4 = new Stack();
-
+      
         ArrayList<String> alist = new ArrayList<String>();
         alist.add("Mounika");
         alist.add("Asif");
@@ -37,13 +37,13 @@ public class ArrayListTest {
         alist.add(null);
         alist.add(null);
         System.out.println(alist);
+        System.out.println("No of elements are : " + alist.size());
         System.out.println("Insertion order is maintained in ArrayList..!");
         alist.set(0,"Akhila"); //index – index of the element to replace
         alist.add(0, "Naresh"); //index – index at which the specified element is to be inserted
         System.out.println(alist);
         alist.remove("Asif");
-
-
+  
         // Traverse the arraylist via iterator
         /**
          * Iterator and for-each loop are faster than simple for loop for collections with no random access,
