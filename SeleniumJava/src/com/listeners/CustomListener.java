@@ -45,6 +45,10 @@ public class CustomListener implements IRetryAnalyzer, ITestListener {
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		System.out.println("Test Failed with success percentage..!");
+		if (result.isSuccess()) {
+			System.out.println("Test Passed..!");
+		} else {
+			System.out.println("Test Failed..!");
+		}
 	}
-
 }

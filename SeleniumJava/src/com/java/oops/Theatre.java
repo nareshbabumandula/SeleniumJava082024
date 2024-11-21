@@ -1,3 +1,4 @@
+
 package com.java.oops;
 
 public interface Theatre {
@@ -23,3 +24,4 @@ public interface Theatre {
 	}
 
 }
+

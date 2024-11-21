@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-24T07:00:41 IST" name="Suite" finished-at="2024-10-24T07:01:01 IST" duration-ms="19729">
+    <groups>
+    </groups>
+    <test started-at="2024-10-24T07:00:41 IST" name="Test" finished-at="2024-10-24T07:01:01 IST" duration-ms="19729">
+      <class name="com.selenium.scripts.ActionsTest">
+        <test-method is-config="true" signature="accessSite(java.lang.String)[pri:0, instance:com.selenium.scripts.ActionsTest@23c30a20]" started-at="2024-10-24T07:00:41 IST" name="accessSite" finished-at="2024-10-24T07:00:54 IST" duration-ms="13064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessSite -->
+        <test-method signature="actionMethods()[pri:0, instance:com.selenium.scripts.ActionsTest@23c30a20]" started-at="2024-10-24T07:00:54 IST" name="actionMethods" finished-at="2024-10-24T07:01:00 IST" duration-ms="6263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionMethods -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.selenium.scripts.ActionsTest@23c30a20]" started-at="2024-10-24T07:01:00 IST" name="closeBrowser" finished-at="2024-10-24T07:01:01 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.selenium.scripts.ActionsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
